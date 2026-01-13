@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Software License Waste Calculator – Estimate SaaS Costs</title>
+  <meta name="description" content="Free online Software License Waste Calculator to estimate how much your business may be wasting on unused SaaS tools. Simple, fast, and accurate.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="Software License Waste Calculator">
+  <meta property="og:description" content="Estimate your company's wasted software expenses in seconds with our free calculator.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourusername.github.io/">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Software License Waste Calculator</h1>
+    <h2>Estimate how much money your company may be wasting on unused software</h2>
+
+    <p>Every year, businesses spend hundreds or thousands of dollars on SaaS tools that go unused. Use this free calculator to quickly see how much could be wasted and start saving today!</p>
+
+    <div class="calculator">
+      <label>
+        Number of employees
+        <input type="number" id="employees" placeholder="e.g. 25">
+      </label>
+
+      <label>
+        Average SaaS tools per employee
+        <input type="number" id="tools" placeholder="e.g. 6">
+      </label>
+
+      <label>
+        Average cost per tool ($ / month)
+        <input type="number" id="cost" value="15">
+      </label>
+
+      <label>
+        Percentage of unused licenses (%)
+        <input type="number" id="unused" placeholder="e.g. 20">
+      </label>
+
+      <button onclick="calculate()">Calculate Waste</button>
+
+      <div id="result" class="result"></div>
+    </div>
+
+    <p>Tip: Once you know your potential waste, consider reviewing unused subscriptions, consolidating licenses, or using a SaaS management tool to save money.</p>
+
+    <footer>
+      <p>Estimates only. Actual costs may vary depending on vendors and usage.</p>
+    </footer>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
